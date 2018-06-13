@@ -1,2 +1,8 @@
 ---
 # vars file for mariadb
+mysql_port: 3306
+dbrootpassword: RAHASIA
+dbrootpasswordnew: RAHASIA
+dbname: training
+dbuser: student
+dbpassword: secret
