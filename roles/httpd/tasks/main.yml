@@ -3,8 +3,7 @@
   yum: name=httpd state=latest
 
 - name: create sites directories
-  file: path={{item}} state=directory
-  with_items: "{{httpd_dirs}}"
+  file: path={{httpd_dirs}} state=directory
 
 - name: copy an index.html
   template: src=index.html.j2 dest={{httpd_docroot}}/index.html
